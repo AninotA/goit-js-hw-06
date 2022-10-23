@@ -1,6 +1,6 @@
 const textInput = document.querySelector("#name-input");
-const textOutput = document.querySelector("#name-output");
-const texStart = textOutput.textContent;
+const output = document.querySelector("#name-output");
+const texStart = output.textContent;
 
 // const onInput = ({ currentTarget }) => {
 //   textOutput.textContent = currentTarget.value;
@@ -9,10 +9,14 @@ const texStart = textOutput.textContent;
 //     textOutput.textContent = "Anonymous";
 //   }
 // };
-textInput.addEventListener("input", event => {
-    if (event.currentTarget.value) {
-        textOutput.textContent = event.currentTarget.value;
-        return;
-    }
 
+// console.log(onInput);
+
+textInput.addEventListener("input", (event) => {
+  if (event.currentTarget.value) {
+    output.textContent = event.currentTarget.value;
+    return;
+  }
+  output.textContent = texStart;
 });
+console.log(textInput);
