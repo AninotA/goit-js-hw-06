@@ -12,7 +12,7 @@ const list = document.querySelector("ul#ingredients");
 const arr = [];
 
 for (let i = 0; i < ingredients.length; i += 1) {
-  console.log(ingredients[i]);
+  // console.log(ingredients[i]);
 
   const ingredient = document.createElement("li");
   ingredient.textContent = ingredients[i];
