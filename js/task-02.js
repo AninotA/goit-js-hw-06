@@ -9,17 +9,24 @@ const ingredients = [
 
 const list = document.querySelector("#ingredients");
 
-const arr = [];
+list.insertAdjacentHTML(
+  "beforeend",
+  ingredients.map((ingr) => `<li class='item'>${ingr}</li>`).join("")
+);
 
-for (let i = 0; i < ingredients.length; i += 1) {
-  // console.log(ingredients[i]);
+console.log(list);
 
-  const ingredient = document.createElement("li");
-  ingredient.textContent = ingredients[i];
-  console.log(ingredient);
+// const arr = [];
 
-  ingredient.classList.add("item");
-  console.log(ingredient.classList);
-  arr.push(ingredient);
-}
-list.append(...arr);
+// for (let i = 0; i < ingredients.length; i += 1) {
+//   // console.log(ingredients[i]);
+
+//   const ingredient = document.createElement("li");
+//   ingredient.textContent = ingredients[i];
+//   console.log(ingredient);
+
+//   ingredient.classList.add("item");
+//   console.log(ingredient.classList);
+//   arr.push(ingredient);
+// }
+// list.append(...arr);
