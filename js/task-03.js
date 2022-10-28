@@ -21,7 +21,7 @@ const markupImg = images
       url,
       alt
     }) => `<li class="gallery__item"><img src="${url}" alt="${alt}" width="350px"
-  height="245px" class="gallery__img"><li>`
+  height="245px" class="gallery__img">`
   )
   .join("");
 console.log(markupImg);
