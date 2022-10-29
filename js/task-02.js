@@ -9,12 +9,12 @@ const ingredients = [
 
 const list = document.querySelector("#ingredients");
 
-list.insertAdjacentHTML(
-  "beforeend",
-  ingredients.map((ingr) => `<li class='item'>${ingr}</li>`).join("")
-);
+// list.insertAdjacentHTML(
+//   "beforeend",
+//   ingredients.map((ingr) => `<li class='item'>${ingr}</li>`).join("")
+// );
 
-console.log(list);
+// console.log(list);
 
 // const arr = [];
 
